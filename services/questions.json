@@ -1,0 +1,392 @@
+[
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "A invenção do alfabeto pelos Fenícios fomentou o desenvolvimento de que área?",
+		"image": "Uma imagem de uma inscrição fenícia com o alfabeto.",
+		"alternatives": {
+			"a": "Agricultura",
+			"b": "Comércio",
+			"c": "Religião",
+			"d": "Igualdade social"
+		},
+		"answer": "Comércio"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "Qual a principal causa das Guerras Médicas entre Gregos e Persas?",
+		"image": "Uma imagem de uma batalha entre Gregos e Persas.",
+		"alternatives": {
+			"a": "Disputa por território",
+			"b": "Diferenças religiosas",
+			"c": "Controle das rotas comerciais",
+			"d": "Expansão territorial do Império Persa"
+		},
+		"answer": "Expansão territorial do Império Persa"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "Qual a principal contribuição da cultura romana para o direito moderno?",
+		"image": "Uma imagem de uma toga romana e um livro com leis.",
+		"alternatives": {
+			"a": "Código de Hamurabi",
+			"b": "Lei das XII Tábuas",
+			"c": "Código Civil Napoleônico",
+			"d": "Declaração Universal dos Direitos Humanos"
+		},
+		"answer": "Lei das XII Tábuas"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "Qual a importância da invenção do alfabeto pelos Fenícios?",
+		"image": "(Imagem de uma inscrição fenícia com o alfabeto)",
+		"alternatives": {
+			"a": "Permitiu o desenvolvimento da agricultura",
+			"b": "Facilitou o comércio",
+			"c": "Estimulou a criação de novas religiões",
+			"d": "Promoveu a igualdade social"
+		},
+		"answer": "Facilitou o comércio"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "Qual a principal diferença entre o politeísmo e o monoteísmo?",
+		"image": "(Imagem de um templo grego e uma igreja)",
+		"alternatives": {
+			"a": "Crença em vários deuses",
+			"b": "Crença em um único deus",
+			"c": "Ausência de crença em deuses",
+			"d": "Crença em deuses da natureza"
+		},
+		"answer": "Crença em um único deus"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "Qual a principal consequência da expansão do Império Romano?",
+		"image": "(Imagem de um mapa mostrando a expansão do Império Romano)",
+		"alternatives": {
+			"a": "Unificação territorial da Europa",
+			"b": "Desenvolvimento da democracia",
+			"c": "Implantação do cristianismo",
+			"d": "Difusão da cultura grega"
+		},
+		"answer": "Unificação territorial da Europa"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "Qual o papel da filosofia na Grécia Antiga?",
+		"image": "(Imagem de Sócrates, Platão e Aristóteles debatendo em Atenas)",
+		"alternatives": {
+			"a": "Questionar o mundo e buscar conhecimento",
+			"b": "Estabelecer leis para a sociedade",
+			"c": "Explicar a origem do universo",
+			"d": "Controlar o poder político"
+		},
+		"answer": "Questionar o mundo e buscar conhecimento"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "MÉDIO",
+		"asking": "Qual a importância da obra \"A República\" de Platão?",
+		"image": "(Imagem da obra \"A República\" de Platão)",
+		"alternatives": {
+			"a": "Descrever a sociedade ideal",
+			"b": "Narrar a Guerra do Peloponeso",
+			"c": "Biografar Sócrates",
+			"d": "Fundar a Academia de Atenas"
+		},
+		"answer": "Descrever a sociedade ideal"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Quais desses povos são conhecidos por serem grandes navegadores e comerciantes?",
+		"image": "IMAGEM DE EMBARCAÇÕES FENICIAS",
+		"alternatives": {
+			"a": "Fenícios",
+			"b": "Sírios",
+			"c": "Persas",
+			"d": "Gregos"
+		},
+		"answer": "Fenícios"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual a principal característica da organização social do Egito Antigo?",
+		"image": "Uma imagem de uma pirâmide egípcia com trabalhadores ao redor.",
+		"alternatives": {
+			"a": "Democracia",
+			"b": "Monarquia",
+			"c": "Teocracia",
+			"d": "República"
+		},
+		"answer": "Teocracia"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual o principal motivo da construção das pirâmides no Egito Antigo?",
+		"image": "Uma imagem de uma pirâmide egípcia com detalhes de sua construção.",
+		"alternatives": {
+			"a": "Armazenar grãos",
+			"b": "Servir como observatórios astronômicos",
+			"c": "abrigar os faraós após a morte",
+			"d": "Serem utilizadas como templos religiosos"
+		},
+		"answer": "abrigar os faraós após a morte"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual a principal diferença entre Esparta e Atenas na Grécia Antiga?",
+		"image": "Uma imagem comparando a organização social de Esparta e Atenas.",
+		"alternatives": {
+			"a": "Localização geográfica",
+			"b": "Clima",
+			"c": "Sistema político",
+			"d": "Religião"
+		},
+		"answer": "Sistema político"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual a principal característica da organização social do Egito Antigo?",
+		"image": "(Imagem de uma pirâmide egípcia com trabalhadores ao redor)",
+		"alternatives": {
+			"a": "Teocracia",
+			"b": "Monarquia",
+			"c": "Democracia",
+			"d": "República"
+		},
+		"answer": "Monarquia"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual a principal diferença entre Esparta e Atenas na Grécia Antiga?",
+		"image": "(Imagem comparando Esparta e Atenas)",
+		"alternatives": {
+			"a": "Localização geográfica",
+			"b": "Clima",
+			"c": "Sistema político",
+			"d": "Religião"
+		},
+		"answer": "Sistema político"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual a principal contribuição da cultura romana para o direito?",
+		"image": "(Imagem de uma toga romana e um livro com leis)",
+		"alternatives": {
+			"a": "Código de Hamurabi",
+			"b": "Lei das XII Tábuas",
+			"c": "Código Civil Napoleônico",
+			"d": "Declaração Universal dos Direitos Humanos"
+		},
+		"answer": "Lei das XII Tábuas"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual a principal função das pirâmides no Egito Antigo?",
+		"image": "(Imagem de uma pirâmide egípcia)",
+		"alternatives": {
+			"a": "Templo religioso",
+			"b": "Observatório astronômico",
+			"c": "Armazenamento de grãos",
+			"d": "Túmulos dos faraós"
+		},
+		"answer": "Túmulos dos faraós"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual a importância do Rio Nilo para a civilização egípcia?",
+		"image": "(Imagem do Rio Nilo e da agricultura egípcia)",
+		"alternatives": {
+			"a": "Fonte de água potável",
+			"b": "Geração de energia",
+			"c": "Transporte de mercadorias",
+			"d": "Irrigação e agricultura"
+		},
+		"answer": "Irrigação e agricultura"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "FÁCIL",
+		"asking": "Qual o principal motivo das Guerras Médicas entre Gregos e Persas?",
+		"image": "(Imagem de uma batalha entre Gregos e Persas)",
+		"alternatives": {
+			"a": "Diferenças religiosas",
+			"b": "Expansão territorial persa",
+			"c": "Controle das rotas comerciais",
+			"d": "Disputa por território"
+		},
+		"answer": "Controle das rotas comerciais"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "DIFÍCIL",
+		"asking": "Qual a relação entre a organização social e a religião no Egito Antigo?",
+		"image": "Uma imagem de um sacerdote egípcio realizando um ritual religioso.",
+		"alternatives": {
+			"a": "Justificar a hierarquia social.",
+			"b": "O faraó era considerado a reencarnação de um deus.",
+			"c": "Os sacerdotes administravam o Estado.",
+			"d": "Arrecadação "
+		},
+		"answer": "Justificar a hierarquia social."
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "DIFÍCIL",
+		"asking": "Qual o papel da filosofia na Grécia Antiga?",
+		"image": "Uma imagem de Sócrates, Platão e Aristóteles debatendo em Atenas.",
+		"alternatives": {
+			"a": "Explicar a origem do universo",
+			"b": "Estabelecer leis para a sociedade",
+			"c": "Questionar o mundo e buscar conhecimento",
+			"d": "Controlar o poder político"
+		},
+		"answer": "Questionar o mundo e buscar conhecimento"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "DIFÍCIL",
+		"asking": "Qual a importância da expansão do Império Romano para a formação da Europa?",
+		"image": "Um mapa mostrando a expansão do Império Romano.",
+		"alternatives": {
+			"a": "Difusão da cultura grega",
+			"b": "Unificação territorial da Europa",
+			"c": "Desenvolvimento da democracia",
+			"d": "Implantação do cristianismo"
+		},
+		"answer": "Unificação territorial da Europa"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "EXPERT",
+		"asking": "Qual civilização desenvolveu um sistema de escrita conhecido como cuneiforme?",
+		"image": "(Imagem de uma tabuleta de argila com escrita cuneiforme)",
+		"alternatives": {
+			"a": "Persas",
+			"b": "Fenícios",
+			"c": "Babilônicos",
+			"d": "Sumérios"
+		},
+		"answer": "Sumérios"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "EXPERT",
+		"asking": "Qual foi a principal atividade econômica dos fenícios na antiguidade?",
+		"image": "(Imagem de navios fenícios comerciando)",
+		"alternatives": {
+			"a": "Agricultura",
+			"b": "Pesca",
+			"c": "Comércio",
+			"d": "Mineração"
+		},
+		"answer": "Comércio"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "EXPERT",
+		"asking": "Qual foi o legado mais duradouro deixado pelos persas na história?",
+		"image": "(Imagem de uma estrada construída pelos persas)",
+		"alternatives": {
+			"a": "O Império",
+			"b": "A Zoroastrismo",
+			"c": "O Sistema de Satrapias",
+			"d": "As Construções"
+		},
+		"answer": "O Sistema de Satrapias"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "EXPERT",
+		"asking": "Qual era a principal atividade econômica dos espartanos na Grécia Antiga?",
+		"image": "(Imagem de um guerreiro espartano treinando)",
+		"alternatives": {
+			"a": "Agricultura",
+			"b": "Pesca",
+			"c": "Comércio",
+			"d": "Guerras"
+		},
+		"answer": "Guerras"
+	},
+	{
+		"area": "HUMANAS",
+		"matter": "HISTÓRIA",
+		"subject": "1 O Mundo Antigo",
+		"difficulty": "EXPERT",
+		"asking": "Quem foi o líder militar espartano conhecido por suas habilidades estratégicas e pela batalha das Termópilas?",
+		"image": "(Imagem de um busto de Leônidas)",
+		"alternatives": {
+			"a": "Alexandre",
+			"b": "o Grande",
+			"c": "Pericles",
+			"d": "Sócrates"
+		},
+		"answer": "Leônidas"
+	}
+]
