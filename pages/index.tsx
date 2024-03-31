@@ -15,13 +15,13 @@ function Home() {
         <Head/>
         <Container>
             <Timer/>
-            {/* <TimerBar indexQuestion={indexQuestion}/> */}
+            <TimerBar indexQuestion={indexQuestion}/>
             {questions && questions.map((question, index) => (
                 index === indexQuestion && (
                     <Question setIndexQuestion={setIndexQuestion} index={index} question={question} key={index}/>
                 )
             ))}
-            {/* <TimerBar right indexQuestion={indexQuestion}/> */}
+            <TimerBar right indexQuestion={indexQuestion}/>
         </Container>
     </>
 }

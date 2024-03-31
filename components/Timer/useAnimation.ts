@@ -31,15 +31,16 @@ function useAnimation() {
         if (secondsInGame != 0) {
             const timerInitial = setTimeout(() => {
                 setSecondsInGame(seconds => {
-                    if (seconds-1 === 0) {
+                    const secondsUpdated = seconds-1
+                    if (secondsUpdated === 0) {
                         setTimeout(() => {
                             setSecondsInitial(3)
                             setMessage('Presta atenção 🧐...')
-                        }, 2500)
+                        }, 4000)
 
-                        return seconds-1
+                        return secondsUpdated
                     } else {
-                        return seconds-1
+                        return secondsUpdated
                     }
                 })
             }, 1000)

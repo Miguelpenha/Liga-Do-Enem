@@ -41,8 +41,8 @@ function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index:
         const timerInitial = setTimeout(() => {
             gsap.to(`.question`, {
                 y: 300,
+                delay: 3,
                 opacity: 0,
-                delay: 1.5,
                 duration: 1,
                 onComplete() {
                     setIndexQuestion(index+1)
@@ -55,14 +55,15 @@ function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index:
 
     useEffect(() => {
         const timerInitial = setTimeout(() => {
-            /*
-            gsap.to(`.question .alternatives-${question.alternatives[alternative] === question.answer}`, {
-                duration: 0.5,
-                color: '#ffffff',
-                backgroundColor: 'green'
+            Object.keys(question.alternatives).map(key => {
+                gsap.to(`.question .alternatives-${key}`, {
+                    duration: 0.5,
+                    color: '#ffffff',
+                    pointerEvents: 'none',
+                    backgroundColor: (question.alternatives as any)[key] === question.answer ? 'green' : 'red'
+                })
             })
-            */
-        }, 1000)
+        }, 13000)
 
         return () => clearTimeout(timerInitial)
     }, [])

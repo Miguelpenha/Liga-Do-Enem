@@ -10,6 +10,7 @@ export const Container = styled.nav`
     align-items: center;
     border-radius: 15px;
     color: ${props => props.theme.color};
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px;
     background-color: ${props => props.theme.primary};
 `
 

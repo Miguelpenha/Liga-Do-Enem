@@ -7,7 +7,8 @@ interface IContainer {
 export const Container = styled.span<IContainer>`
     width: 1em;
     z-index: 1;
-    height: 100vh;
+    bottom: 0%;
+    height: 78%;
     position: absolute;
     background-color: #c3c2c2;
     border-radius: 20px 20px 0 0px;

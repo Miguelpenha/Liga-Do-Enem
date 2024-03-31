@@ -2,14 +2,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     opacity: 0;
-    width: 100%;
+    width: 90%;
     padding: 1em;
     height: 100%;
     display: flex;
     margin-top: 1em;
+    align-self: center;
     transform: translateY(300px);
     border-radius: 25px 25px 0 0;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -5px 10px;
     background-color: ${props => props.theme.primary};
 `
 
