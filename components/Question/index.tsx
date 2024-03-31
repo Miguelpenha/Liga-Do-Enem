@@ -28,7 +28,7 @@ interface IProps {
 const Question: FC<IProps> = ({ question, index, setIndexQuestion }) => {
     const handleClick = useHandleClick(question)
     
-    useAnimation(setIndexQuestion, index)
+    useAnimation(setIndexQuestion, index, question)
 
     return (
         <Container className="question">

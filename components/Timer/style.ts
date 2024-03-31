@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.nav`
-    top: -15%;
-    z-index: 2;
     opacity: 0;
     width: 12em;
     padding: 1em;
+    margin: auto;
     display: flex;
-    position: fixed;
+    margin-top: 1em;
     align-items: center;
     border-radius: 15px;
     color: ${props => props.theme.color};
