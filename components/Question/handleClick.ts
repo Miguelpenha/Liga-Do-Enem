@@ -22,15 +22,13 @@ function useHandleClick(question: IQuestion) {
             gsap.to(`.question .alternatives-${alternative}`, {
                 duration: 0.5,
                 color: '#ffffff',
-                transform: 'scale(0.9)',
                 backgroundColor: 'green'
             })
         } else {
             gsap.to(`.question .alternatives-${alternative}`, {
                 duration: 0.5,
                 color: '#ffffff',
-                backgroundColor: 'red',
-                transform: 'scale(0.9)'
+                backgroundColor: 'red'
             })
         }
 
