@@ -3,6 +3,7 @@ import api from '../../services/api'
 import { useState } from 'react'
 import { Container } from './style'
 import Timer from './Timer'
+import TimerBar from './TimerBar'
 import Question from './Question'
 
 function Questions() {
@@ -11,13 +12,14 @@ function Questions() {
 
     return (
         <Container>
-            <Timer indexQuestion={indexQuestion}/>
+            <Timer/>
+            <TimerBar indexQuestion={indexQuestion}/>
             {questions && questions.map((question, index) => (
                 index === indexQuestion && (
                     <Question setIndexQuestion={setIndexQuestion} index={index} question={question} key={index}/>
                 )
             ))}
-            <Timer right indexQuestion={indexQuestion}/>
+            <TimerBar right indexQuestion={indexQuestion}/>
         </Container>
     )
 }

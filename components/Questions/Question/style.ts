@@ -5,6 +5,7 @@ export const Container = styled.div`
     width: 40em;
     padding: 1em;
     display: flex;
+    margin-top: 8em;
     border-radius: 15px;
     transform: translateY(20%);
     background-color: ${props => props.theme.primary};
