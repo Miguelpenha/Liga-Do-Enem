@@ -7,6 +7,7 @@ export const Container = styled.div`
     height: 100%;
     display: flex;
     margin-top: 1em;
+    overflow-y: scroll;
     align-self: center;
     transform: translateY(300px);
     border-radius: 25px 25px 0 0;
@@ -17,6 +18,7 @@ export const Container = styled.div`
 export const Asking = styled.h4`
     width: 40em;
     color: #FFFFFF;
+    font-size: 1em;
     margin-top: 0.5em;
     align-self: center;
 
@@ -26,7 +28,7 @@ export const Asking = styled.h4`
 `
 
 export const Alternatives = styled.ul`
-    gap: 1.5em;
+    gap: 0.8em;
     width: 40em;
     padding: 1em;
     display: flex;

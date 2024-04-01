@@ -15,7 +15,7 @@ export const Container = styled.nav`
 `
 
 export const Time = styled.span`
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
     color: ${props => props.theme.color};
 `
