@@ -3,11 +3,13 @@ import styled from 'styled-components'
 export const Container = styled.div`
     opacity: 0;
     width: 85%;
+    bottom: 0%;
+    height: 75%;
     padding: 1em;
-    height: 100%;
     display: flex;
     margin-top: 1em;
     overflow-y: scroll;
+    position: absolute;
     align-self: center;
     transform: translateY(300px);
     border-radius: 25px 25px 0 0;
