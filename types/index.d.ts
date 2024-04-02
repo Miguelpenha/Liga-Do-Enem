@@ -1,5 +1,9 @@
+import IQuiz from './quiz'
 import ITheme from './theme'
+import IQuestion from './question'
 
 export {
-    ITheme
+    IQuiz,
+    ITheme,
+    IQuestion
 }

@@ -1,16 +1,22 @@
+import useTimer from '../components/useTimer'
+import { IQuiz } from '../types'
 // import api from '../services/api'
+import questionsRaw from '../services/questions.json'
 import { useState, useEffect } from 'react'
 import Head from '../components/Head'
 import { Container } from '../styles/pages'
 import Timer from '../components/Timer'
 import TimerBar from '../components/TimerBar'
-import questions from '../services/questions.json'
 import Question from '../components/Question'
+import Result from '../components/Result'
 
 function Home() {
     // const { data: questions } = api.get<[]>('/questions')
+    const questions = questionsRaw.slice(0, 8)
     const [indexQuestion, setIndexQuestion] = useState(0)
+    const timer = useTimer(indexQuestion, questions.length)
     const [heightDevice, setHeightDevice] = useState<number>()
+    const [quiz, setQuiz] = useState<IQuiz>({ score: 0, questions: [] })
 
     useEffect(() => {
         setHeightDevice(window.innerHeight)
@@ -20,14 +26,15 @@ function Home() {
         return <>
             <Head/>
             <Container height={heightDevice}>
-                <Timer/>
-                <TimerBar indexQuestion={indexQuestion}/>
+                <Timer message={timer.message} seconds={timer.seconds}/>
+                <TimerBar questionsLength={questions.length} indexQuestion={indexQuestion}/>
                 {questions && questions.map((question, index) => (
                     index === indexQuestion && (
-                        <Question setIndexQuestion={setIndexQuestion} index={index} question={question} key={index}/>
+                        <Question seconds={timer.seconds} setQuiz={setQuiz} setIndexQuestion={setIndexQuestion} index={index} question={question} key={index}/>
                     )
                 ))}
-                <TimerBar right indexQuestion={indexQuestion}/>
+                {timer.finished && <Result quiz={quiz}/>}
+                <TimerBar right questionsLength={questions.length} indexQuestion={indexQuestion}/>
             </Container>
         </>
     }

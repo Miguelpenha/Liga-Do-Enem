@@ -1,29 +1,19 @@
+import { IQuestion, IQuiz } from '../../types'
+import { Dispatch, SetStateAction } from 'react'
 import gsap from 'gsap'
 
-interface IQuestion {
-    area: string
-    image: string
-    matter: string
-    answer: string
-    asking: string
-    subject: string
-    difficulty: string
-    alternatives: {
-        a: string
-        b: string
-        c: string
-        d: string
-    }
-}
-
-function useHandleClick(question: IQuestion) {
+function useHandleClick(question: IQuestion, setQuiz: Dispatch<SetStateAction<IQuiz>>, seconds: number) {
     function handleClick(alternative: 'a' | 'b' | 'c' | 'd') {
+        let score = 0
+
         if (question.alternatives[alternative] === question.answer) {
             gsap.to(`.question .alternatives-${alternative}`, {
                 duration: 0.5,
                 color: '#ffffff',
                 backgroundColor: 'green'
             })
+
+            score = 10+2.5
         } else {
             gsap.to(`.question .alternatives-${alternative}`, {
                 duration: 0.5,
@@ -31,6 +21,8 @@ function useHandleClick(question: IQuestion) {
                 backgroundColor: 'red'
             })
         }
+
+        setQuiz(quiz => ({ ...quiz, score: score+quiz.score, questions: [...quiz.questions, { ...question, answerResolved: question.alternatives[alternative] }] }))
 
         gsap.to('.question>.alternatives', {
             pointerEvents: 'none'

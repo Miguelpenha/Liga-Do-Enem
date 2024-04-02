@@ -1,23 +1,8 @@
 import { Dispatch, SetStateAction, useEffect } from 'react'
+import { IQuestion, IQuiz } from '../../types'
 import gsap from 'gsap'
 
-interface IQuestion {
-    area: string
-    image: string
-    matter: string
-    answer: string
-    asking: string
-    subject: string
-    difficulty: string
-    alternatives: {
-        a: string
-        b: string
-        c: string
-        d: string
-    }
-}
-
-function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index: number, question: IQuestion) {
+function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index: number, question: IQuestion, setQuiz: Dispatch<SetStateAction<IQuiz>>) {
     useEffect(() => {
         gsap.to('.question', {
             y: 0,
@@ -45,6 +30,14 @@ function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index:
                 opacity: 0,
                 duration: 1,
                 onComplete() {
+                    setQuiz(quiz => {
+                        if (!quiz.questions[index]) {
+                            return { ...quiz, questions: [...quiz.questions, { ...question, answerResolved: false }] }
+                        } else {
+                            return quiz
+                        }
+                    })
+
                     setIndexQuestion(index+1)
                 }
             })
@@ -59,11 +52,10 @@ function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index:
                 gsap.to(`.question .alternatives-${key}`, {
                     duration: 0.5,
                     color: '#ffffff',
-                    pointerEvents: 'none',
                     backgroundColor: (question.alternatives as any)[key] === question.answer ? 'green' : 'red'
                 })
             })
-        }, 13000)
+        }, 2000)
 
         return () => clearTimeout(timerInitial)
     }, [])

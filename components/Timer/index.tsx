@@ -1,13 +1,16 @@
-import useAnimation from './useAnimation'
+import { FC } from 'react'
 import { Container, Time, Message } from './style'
 
-function Timer() {
-    const { seconds, message } = useAnimation()
+interface IProps {
+    seconds: number
+    message: string
+}
 
+const Timer: FC<IProps> = ({ seconds, message }) => {
     return (
         <Container id="timer">
-            <Time>{seconds}</Time>
-            <Message>{message}</Message>
+            <Time className="time">{seconds}</Time>
+            <Message className="message">{message}</Message>
         </Container>
     )
 }
