@@ -52,10 +52,11 @@ function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index:
                 gsap.to(`.question .alternatives-${key}`, {
                     duration: 0.5,
                     color: '#ffffff',
+                    pointerEvents: 'none',
                     backgroundColor: (question.alternatives as any)[key] === question.answer ? 'green' : 'red'
                 })
             })
-        }, 2000)
+        }, 13000)
 
         return () => clearTimeout(timerInitial)
     }, [])
