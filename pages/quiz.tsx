@@ -13,7 +13,7 @@ import Result from '../components/Result'
 function Quiz() {
     // const { data: questions } = api.get<[]>('/questions')
     const questions = questionsRaw.slice(0, 8)
-    const [indexQuestion, setIndexQuestion] = useState(0)
+    const [indexQuestion, setIndexQuestion] = useState(7)
     const timer = useTimer(indexQuestion, questions.length)
     const [heightDevice, setHeightDevice] = useState<number>()
     const [quiz, setQuiz] = useState<IQuiz>({ score: 0, questions: [] })

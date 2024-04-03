@@ -19,10 +19,10 @@ export const Container = styled.div`
 
 export const Asking = styled.h4`
     width: 40em;
-    color: #FFFFFF;
     font-size: 1em;
     margin-top: 0.5em;
     align-self: center;
+    color: ${props => props.theme.color};
 
     @media screen and (max-width: 700px) {
         width: 90%;
@@ -73,11 +73,11 @@ export const Alternative = styled.button`
     border-radius: 10px;
     transform: scale(0.9);
     justify-content: center;
-    background-color: #FFFFFF;
     transition-duration: 0.15s;
     transition-timing-function: linear;
     color: ${props => props.theme.primary};
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    background-color: ${props => props.theme.color};
 
     :hover {
         transform: scale(1);

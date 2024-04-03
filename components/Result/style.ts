@@ -19,11 +19,11 @@ export const Container = styled.div`
 
 export const Title = styled.h3`
     margin: 1em;
-    color: #FFFFFF;
     font-size: 1.5em;
     margin-top: 0.5em;
     text-align: center;
     align-self: center;
+    color: ${props => props.theme.color};
 `
 
 export const AnswersResolved = styled.div`
@@ -39,8 +39,8 @@ export const AnswerResolved = styled.div<IAnswerResolved>`
     padding: 1em;
     font-weight: bold;
     border-radius: 10px;
-    background-color: #FFFFFF;
-    color: ${props => props.answerCorrect ? 'green' : 'red'};
+    background-color: ${props => props.theme.color};
+    color: ${props => props.answerCorrect ? props.theme.success : props.theme.error};
 `
 
 interface IIcon {
@@ -48,5 +48,5 @@ interface IIcon {
 }
 
 export const Icon = styled.svg<IIcon>`
-    fill: ${props => props.answerCorrect ? 'green' : 'red'};
+    fill: ${props => props.answerCorrect ? props.theme.success : props.theme.error};
 `

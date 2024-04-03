@@ -1,8 +1,11 @@
 import { Dispatch, SetStateAction, useEffect } from 'react'
 import { IQuestion, IQuiz } from '../../types'
+import { useTheme } from 'styled-components'
 import gsap from 'gsap'
 
 function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index: number, question: IQuestion, setQuiz: Dispatch<SetStateAction<IQuiz>>) {
+    const theme = useTheme()
+
     useEffect(() => {
         gsap.to('.question', {
             y: 0,
@@ -51,9 +54,9 @@ function useAnimation(setIndexQuestion: Dispatch<SetStateAction<number>>, index:
             Object.keys(question.alternatives).map(key => {
                 gsap.to(`.question .alternatives-${key}`, {
                     duration: 0.5,
-                    color: '#ffffff',
+                    color: theme.color,
                     pointerEvents: 'none',
-                    backgroundColor: (question.alternatives as any)[key] === question.answer ? 'green' : 'red'
+                    backgroundColor: (question.alternatives as any)[key] === question.answer ? theme.success : theme.error
                 })
             })
         }, 13000)

@@ -2,9 +2,11 @@ import { ITheme } from '../types'
 
 const theme: ITheme = {
     color: '#FFFFFF',
-    primary: '#A100FB',
-    secondary: '#F1F0F0',
-    background: '#000000',
+    error: '#8e0000',
+    success: 'green',
+    primary: '#FF5858',
+    secondary: '#323232',
+    background: '#121212',
     secondaryColor: '#F6F5F5'
 }
 

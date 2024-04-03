@@ -9,4 +9,5 @@ export const Container = styled.main<IContainer>`
     overflow: hidden !important;
     overflow-y: hidden !important;
     height: ${props => props.height}px;
+    background-color: ${props => props.theme.background};
 `

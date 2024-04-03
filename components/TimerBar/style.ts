@@ -10,8 +10,8 @@ export const Container = styled.span<IContainer>`
     bottom: 0%;
     height: 78%;
     position: absolute;
-    background-color: #c3c2c2;
     border-radius: 20px 20px 0 0px;
+    background-color: ${props => props.theme.secondary};
 
     ${props => props.right ? css`
         right: 0%;

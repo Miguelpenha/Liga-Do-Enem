@@ -1,5 +1,5 @@
 import Head from '../components/Head'
-import { Container, Title, Button } from '../styles/pages'
+import { Container, Header, Image, Title, SubTitle, Button } from '../styles/pages'
 
 function Home() {
     const name = 'Miguel'
@@ -7,10 +7,14 @@ function Home() {
     return <>
         <Head/>
         <Container>
-            <Title id="title">Seja bem vindo <span className="name">{name}</span> 😁</Title>
+            <Header id="header">
+                <Image/>
+                <Title>Dalee, {name} 😁</Title>
+                <SubTitle>Vai estudar o que hoje?</SubTitle>
+            </Header>
             <Button href="/quiz">
                 <span>Começar 🔥</span>
-                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" viewBox="0 0 24 24">
                     <g>
                         <path d="M0,0h24v24H0V0z" fill="none"/>
                     </g>
