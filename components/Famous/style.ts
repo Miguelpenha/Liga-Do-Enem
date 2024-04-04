@@ -12,7 +12,7 @@ export const Title = styled.span`
 `
 
 export const Quizzes = styled.ul`
-    gap: 4em;
+    gap: 1.5em;
     display: flex;
     margin-top: 1em;
     overflow: scroll;

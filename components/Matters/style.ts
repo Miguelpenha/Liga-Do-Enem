@@ -13,7 +13,7 @@ export const Title = styled.span`
 `
 
 export const MattersList = styled.ul`
-    gap: 4em;
+    gap: 0.5em;
     display: flex;
     margin-top: 1em;
     overflow: scroll;
@@ -25,22 +25,25 @@ export const MattersList = styled.ul`
 export const Matter = styled.li`
     list-style: none;
     position: relative;
+    border-radius: 10px;
     scroll-snap-align: center;
 `
 
 export const MatterImage = styled.div`
     width: 10em;
     height: 10em;
-    background-color: ${props => props.theme.secondary};
+    border-radius: 10px;
+    background-color: ${props => props.theme.color};
 `
 
 export const MatterTitle = styled.span`
     left: 50%;
-    bottom: 10%;
+    bottom: 8%;
     display: flex;
+    color: #5A5A5A;
     font-size: 1em;
     margin-top: 0.5em;
+    font-weight: bold;
     position: absolute;
     transform: translateX(-50%);
-    color: ${props => props.theme.secondaryColor};
 `
