@@ -4,7 +4,7 @@ import quizzesFamous from '../../services/quizzesFamous.json'
 function Famous() {
     return (
         <Container>
-            <Title>Os mais hypados do momento</Title>
+            <Title>Os mais hypados do momento 🔥</Title>
             <Quizzes>
                 {quizzesFamous.map(quiz => (
                     <Quiz>
