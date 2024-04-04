@@ -1,6 +1,7 @@
 import Head from '../components/Head'
 import { Container, Header, Image, Title, SubTitle, Button } from '../styles/pages'
 import Famous from '../components/Famous'
+import Matters from '../components/Matters'
 
 function Home() {
     const name = 'Miguel'
@@ -25,6 +26,7 @@ function Home() {
                 </svg>
             </Button>
             <Famous/>
+            <Matters/>
         </Container>
     </>
 }
