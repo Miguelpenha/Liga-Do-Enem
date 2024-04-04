@@ -6,8 +6,8 @@ function Famous() {
         <Container>
             <Title>Os mais hypados do momento 🔥</Title>
             <Quizzes>
-                {quizzesFamous.map(quiz => (
-                    <Quiz>
+                {quizzesFamous.map((quiz, index) => (
+                    <Quiz key={index}>
                         <QuizImage/>
                         <QuizTitle>{quiz.title}</QuizTitle>
                     </Quiz>

@@ -6,8 +6,8 @@ function Matters() {
         <Container>
             <Title>Escolha uma máteria aí 📚</Title>
             <MattersList>
-                {matters.map(matter => (
-                    <Matter>
+                {matters.map((matter, index) => (
+                    <Matter key={index}>
                         <MatterImage/>
                         <MatterTitle>{matter}</MatterTitle>
                     </Matter>

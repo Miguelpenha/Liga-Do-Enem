@@ -18,7 +18,7 @@ export const Image = styled.div`
     width: 3.5em;
     height: 3.5em;
     margin: 1em 0;
-    margin-top: 2.5em;
+    margin-top: 1em;
     border-radius: 50%;
     background-color: ${props => props.theme.secondary};
 `
