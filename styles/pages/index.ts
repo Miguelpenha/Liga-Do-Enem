@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Container = styled.main`
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     background-color: ${props => props.theme.background};
 `
 
@@ -11,7 +11,6 @@ export const Header = styled.header`
     display: flex;
     padding-left: 1.5em;
     padding-bottom: 2.5em;
-    flex-direction: column;
     background-color: ${props => props.theme.primary};
 `
 
