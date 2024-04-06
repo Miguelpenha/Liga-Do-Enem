@@ -75,9 +75,9 @@ export const Alternative = styled.button`
     justify-content: center;
     transition-duration: 0.15s;
     transition-timing-function: linear;
-    color: ${props => props.theme.primary};
+    color: ${props => props.theme.color};
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
-    background-color: ${props => props.theme.color};
+    background-color: ${props => props.theme.secondary};
 
     :hover {
         transform: scale(1);
