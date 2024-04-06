@@ -1,5 +1,6 @@
 import Head from '../components/Head'
-import { Container, Header, Image, Title, SubTitle, Button } from '../styles/pages'
+import { Container, Button } from '../styles/pages'
+import Header from '../components/Header'
 import Famous from '../components/Famous'
 import Matters from '../components/Matters'
 
@@ -9,11 +10,7 @@ function Home() {
     return <>
         <Head/>
         <Container>
-            <Header id="header">
-                <Image/>
-                <Title>Dalee, {name} 😁</Title>
-                <SubTitle>Vai estudar o que hoje?</SubTitle>
-            </Header>
+            <Header name={name}/>
             <Button href="/quiz">
                 <span>Começar 🔥</span>
                 <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" viewBox="0 0 24 24">
