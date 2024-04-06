@@ -7,7 +7,9 @@ export const Container = styled.div`
 `
 
 export const Title = styled.span`
+    opacity: 0;
     font-size: 1em;
+    transform: translateY(100%);
     color: ${props => props.theme.color};
 `
 
@@ -22,8 +24,10 @@ export const Quizzes = styled.ul`
 `
 
 export const Quiz = styled.li`
+    opacity: 0;
     list-style: none;
     scroll-snap-align: center;
+    transform: translateX(50%);
 `
 
 export const QuizImage = styled.div`

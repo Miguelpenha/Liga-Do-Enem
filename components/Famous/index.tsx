@@ -1,15 +1,18 @@
+import useAnimation from './useAnimation'
 import { Container, Title, Quizzes, Quiz, QuizImage, QuizTitle } from './style'
 import quizzesFamous from '../../services/quizzesFamous.json'
 
 function Famous() {
+    useAnimation()
+
     return (
         <Container>
-            <Title>Os mais hypados do momento 🔥</Title>
-            <Quizzes>
+            <Title className="title">Os mais hypados do momento 🔥</Title>
+            <Quizzes id="quizzes-famous">
                 {quizzesFamous.map((quiz, index) => (
-                    <Quiz key={index}>
+                    <Quiz key={index} className="quiz">
                         <QuizImage/>
-                        <QuizTitle>{quiz.title}</QuizTitle>
+                        <QuizTitle className="title">{quiz.title}</QuizTitle>
                     </Quiz>
                 ))}
             </Quizzes>
