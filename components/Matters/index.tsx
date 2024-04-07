@@ -4,7 +4,7 @@ import matters from './matters'
 function Matters() {
     return (
         <Container>
-            <Title>Escolha uma máteria aí 📚</Title>
+            <Title>Escolhe uma máteria aí 📚</Title>
             <MattersList>
                 {matters.map((matter, index) => (
                     <Matter key={index}>
