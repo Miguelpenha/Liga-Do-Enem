@@ -26,6 +26,10 @@ function useTimer(index: number, questionsLength: number) {
                 gsap.to('.timer-bar', {
                     opacity: 0
                 })
+
+                gsap.to('#points', {
+                    opacity: 0
+                })
     
                 setMessage('Fim! 🥳')
 

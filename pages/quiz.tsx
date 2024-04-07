@@ -5,6 +5,7 @@ import questionsRaw from '../services/questions.json'
 import { useState, useEffect } from 'react'
 import Head from '../components/Head'
 import { Container } from '../styles/pages/quiz'
+import Points from '../components/Points'
 import Timer from '../components/Timer'
 import TimerBar from '../components/TimerBar'
 import Question from '../components/Question'
@@ -12,7 +13,7 @@ import Result from '../components/Result'
 
 function Quiz() {
     // const { data: questions } = api.get<[]>('/questions')
-    const questions = questionsRaw.slice(0, 8)
+    const questions = questionsRaw.slice(7, 8)
     const [indexQuestion, setIndexQuestion] = useState(0)
     const timer = useTimer(indexQuestion, questions.length)
     const [heightDevice, setHeightDevice] = useState<number>()
@@ -26,6 +27,7 @@ function Quiz() {
         return <>
             <Head/>
             <Container height={heightDevice}>
+                <Points score={quiz.score}/>
                 <Timer message={timer.message} seconds={timer.seconds}/>
                 <TimerBar questionsLength={questions.length} indexQuestion={indexQuestion}/>
                 {questions && questions.map((question, index) => (
