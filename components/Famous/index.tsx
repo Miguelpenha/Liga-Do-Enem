@@ -6,9 +6,9 @@ function Famous() {
     useAnimation()
 
     return (
-        <Container>
+        <Container id="quizzes-famous">
             <Title className="title">Os mais hypados do momento 🔥</Title>
-            <Quizzes id="quizzes-famous">
+            <Quizzes className="list">
                 {quizzesFamous.map((quiz, index) => (
                     <Quiz key={index} className="quiz">
                         <QuizImage/>

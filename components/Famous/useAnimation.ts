@@ -8,7 +8,7 @@ function useAnimation() {
             opacity: 1
         })
 
-        gsap.to('#quizzes-famous>.quiz', {
+        gsap.to('#quizzes-famous>.list>.quiz', {
             x: 0,
             opacity: 1,
             duration: 1,
