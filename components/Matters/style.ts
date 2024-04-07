@@ -40,10 +40,10 @@ export const MatterTitle = styled.span`
     left: 50%;
     bottom: 8%;
     display: flex;
-    color: #5A5A5A;
     font-size: 1em;
     margin-top: 0.5em;
     font-weight: bold;
     position: absolute;
     transform: translateX(-50%);
+    color: ${props => props.theme.secondary};
 `
