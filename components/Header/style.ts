@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ImageRaw from 'next/image'
 
 export const Container = styled.header`
     display: flex;
@@ -7,7 +8,7 @@ export const Container = styled.header`
     background-color: ${props => props.theme.primary};
 `
 
-export const Image = styled.div`
+export const Image = styled(ImageRaw)`
     opacity: 0;
     width: 3.5em;
     height: 3.5em;

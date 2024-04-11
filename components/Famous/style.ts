@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 export const Container = styled.div`
     display: flex;
@@ -30,7 +31,7 @@ export const Quiz = styled.li`
     transform: translateX(50%);
 `
 
-export const QuizImage = styled.div`
+export const QuizImage = styled(Image)`
     width: 10em;
     height: 10em;
     background-color: ${props => props.theme.secondary};
